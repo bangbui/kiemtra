@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
 	int n;
+	int tich = 0;
 	cout<<"Nhap n: ";
 	cin>>n;
 	int i=2;
@@ -13,5 +14,11 @@ int main()
 			cout<<i<<" ";
 		i++;
 	}
-	return 0;
+	tich = tich * i;
+	if (tich == 0){
+		cout << "Da co ket qua" << endl;
+	}
+	else
+		return 0;
+	system("pause");
 }
