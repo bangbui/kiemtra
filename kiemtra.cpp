@@ -7,14 +7,17 @@ void PhanTich(int n)
 	{
 		for (int j = i;;)
 		{
-			if (n % j == 0)
+			if (n % j == 0 && kiemtra(j))
 			{
 				cout << j << " * ";
 				n /= j;
 			}
 			else
 				break;
+
 		}
+	}
+}
 bool KiemTra(int n)
 {
 	if (n == 2)
@@ -34,16 +37,8 @@ int main()
 	int n;
 	cout << "Nhap n: ";
 	cin >> n;
-	int i = 2;
-	while (n > 0 && i <= n)
-	{
-		for (int j = i;;)
-			if (n%j == 0 && KiemTra(j))
-			{
-			cout << j << " ";
-			n /= j;
-			}
-			else
-				break;
-		i++;
-	}
+	PhanTich(n);
+	//KiemTra se an toan hon khi su dung truc tiep tren ham main
+	getch();
+	return 0;
+}
