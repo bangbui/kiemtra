@@ -1,56 +1,19 @@
 #include <iostream>
 using namespace std;
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> bf43b84e46c43e3276f506e4bb771a275a8f007e
-void PhanTich(int n)
-{
-	for (int i = 2; i <= n; i++)
-	{
-		for (int j = i;;)
-		{
-<<<<<<< HEAD
-			if (n % j == 0 && KiemTra(j))
-=======
-			if (n % j == 0)
->>>>>>> bf43b84e46c43e3276f506e4bb771a275a8f007e
-			{
-				cout << j << " * ";
-				n /= j;
-			}
-			else
-				break;
-		}
-<<<<<<< HEAD
-	}
-=======
-bool KiemTra(int n)
-{
-	if (n == 2)
-		return true;
-	if (n % 2 == 0)
-		return false;
-	for (int i = 3; i <= sqrt(n); i += 2)
-	{
-		if (n % i == 0)
-			return false;
-	}
-	return true;
->>>>>>> bf43b84e46c43e3276f506e4bb771a275a8f007e
-}
-
 int main()
 {
 	int n;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	int tich = 1;
+=======
+>>>>>>> 704c1f064fddcd71f8734391ea69a2e3a170a4be
 	cout<<"Nhap n: ";
 	cin>>n;
 	int i=2;
 	while(n>0 && i<=n)
+<<<<<<< HEAD
 =======
 	cout << "Nhap n: ";
 	cin >> n;
@@ -63,16 +26,14 @@ int main()
 =======
 	while (n > 0 && i <= n)
 >>>>>>> 50171296e36b7aac1a130678c6a15f05add2cf18
+=======
+>>>>>>> 704c1f064fddcd71f8734391ea69a2e3a170a4be
 	{
-<<<<<<< HEAD
-		if (n%i == 0)
-		{
-					if (kiemTraSoNguyenTo(i)==0)
-						cout << i << " ";
-		}
->>>>>>> bf43b84e46c43e3276f506e4bb771a275a8f007e
+		if(n%i==0)
+			cout<<i<<" ";
 		i++;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 	cout << "tich 2 so nguyen la:" << tich << endl;
 =======
@@ -87,31 +48,7 @@ int tich(int n)
 	for (int i = 0; i <= n; i++)
 		tich = tich*i;
 	return tich;
-}
-	int kiemTraSoNguyenTo(int n)
-	{
-		bool flag = false;
-
-		for (int i = 2; i <= n / 2; ++i)
-		{
-			if (n%i == 0)
-			{
-				flag = true;
-				break;
-			}
-		}
-		return flag;
-	}
-
 =======
-		for (int j = i;;)
-			if (n%j == 0 && KiemTra(j))
-			{
-			cout << j << " ";
-			n /= j;
-			}
-			else
-				break;
-		i++;
-	}
->>>>>>> 55530c59bd9d15ee4f287d7a9d1bb7cbaaf3684b
+	system("pause");
+>>>>>>> 704c1f064fddcd71f8734391ea69a2e3a170a4be
+}
